@@ -40,6 +40,8 @@ const deleteItemHandler = (id: number) => {
 const editItemHandler = (item: Item)=>{
   setisEdit(true)
   setitemName(item.name);
+  setstockAmt(item.stock.toString());
+  seteditItemId(item.id);
 }
 const updateItemHandler=()=>{
   setdata(data.map((item)=>(
